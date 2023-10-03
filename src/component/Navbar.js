@@ -10,7 +10,7 @@ const Navbar = () => {
                 <li className="m-4 hover:text-emerald-400 ">Contact</li>
             </ul>
 
-            <ul className=" flex items-center ml-12 mr-4 ">
+            <ul className=" flex items-center ml-12 mr-6 ">
 
                 <li className="m-4   hover:text-emerald-400">Login</li>
 
