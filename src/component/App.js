@@ -26,7 +26,7 @@ const App = () => {
                         </select>
                         <button className="w-36 h-8 rounded bg-emerald-300 m-4"> Serch</button>
                     </div>
-                    <div classname="w-"></div>
+
 
                 </div>
             </div>
