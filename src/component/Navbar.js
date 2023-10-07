@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="w-3/4 bg-white h-20 flex items-center  rounded-xl p-2 ml-36  ">
+        <div className="w-[366px] bg-white h-20 flex items-center  rounded-xl p-2   md:w-3/4 md:ml-36 ">
             <h1><span className=" text-2xl">CLASS</span><span className="text-emerald-400 text-2xl">YADS</span></h1>
             <ul className=" flex items-center ml-48 ">
                 <li className="m-2  hover:text-emerald-400">Home</li>
