@@ -8,31 +8,31 @@ const App = () => {
 
                 <Navbar/>
                     {/*--------------------------------------------------heding in site --------------------------------------------                    */}
-                    <div className="text-center mt-36 ">
-                        <h1 className=" text-2xl md:text-5xl text-white  ">Largest Classifieds In The World</h1>
-                        <h2 className="text-xl mt-8 ">You can buy, sell anything you want.
+                    <div className="mt-36 ">
+                        <h1 className="text-2xl text-center text-white  md:text-5xl md:text-center">Largest Classifieds In The World</h1>
+                        <h2 className="text-lg text-center  mt-6 md: text-xl md:text-center  ">You can buy, sell anything you want.
                         </h2>
                     </div>
                     {/*--------------------------------------------------serch bar-------------------------------------------------*/}
                     <div
-                        className=" flex justify-items-center rounded ml-40 text-center mt-36 w-3/4 h-46  relative z-0	">
-                        <div className="absolute opacity-50  bg-white h-[80px] w-full rounded z-0"></div>
+                        className="  flex flex-col ml-24   relative md:flex-row md:justify-items-center   rounded md:ml-40 text-center mt-36 md: w-3/4 md:h-46   	">
+                        <div className=" h-80 w-72  mx-auto   absolute opacity-50  bg-white md:h-[80px] md:w-full rounded"></div>
                         <input placeholder="What are you looking for? " type="text"
-                               className="border  rounded m-4 h-8 w-56 p-2 z-99 "/>
+                               className="border  rounded m-4 h-8 w-56 p-2 ml-8 "/>
                         <input placeholder="Location " type="text"
-                               className="border  rounded m-4 h-8 w-56 p-2  z-99 "/>
+                               className="border    rounded m-4 h-8 w-56 p-2  ml-8 "/>
                         {/*<input type="text" className="border rounded m-4 h-8 w-56 p-2 " />*/}
-                        <select className="border  bg-white rounded m-4 h-8 w-56 pl-2 z-99 ">
-                            <option className="selected">All categories</option>
+                        <select className="border bg-white rounded m-4 h-8 w-56 pl-2 ml-8 ">
+                            <option className="selected ">All categories</option>
                             <option>All categories</option>
                             <option>All categories</option>
                             <option>All categories</option>
                         </select>
-                        <button className="w-36 h-8 rounded bg-emerald-300 m-4"> Serch</button>
+                        <button className="w-36 h-8  rounded bg-emerald-300 m-4 ml-8"> Serch</button>
 
                     </div>
                     {/*----------------------------------------------------users----------------------------------------------------*/}
-                    <div className="w-3/4 h-40 bg-white rounded-xl mt-80 ml-44 flex  justify-items-center shadow-2xl">
+                    <div className="shadow-2xl  mt-80 ml-44 w-52 flex flex-col  md:flex md:flex-row md:w-3/4 md:h-40 bg-white rounded-xl  md:ml-40  md:justify-items-center ">
                         <div
                             className="w-32  ml-8 mt-2 hover:bg-emerald-300 p-8 grid justify-items-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
                             <i className="fa-solid fa-user text-indigo-600 mb-2"></i>
@@ -71,9 +71,9 @@ const App = () => {
                         </div>
                     </div>
                     {/*---------------------------------------------Featured Ads-------------------------------------------------------------*/}
-                    <div className="w-full h-96  bg-gray-100 ml-30 mt-32 p-4 flex  justify-center ">
+                    <div className="  flex flex-col bg-gray-100 ml-30 mt-32 p-4 md:w-full md:h-96  md:flex-row  md:justify-center ">
 
-                        <div className="bg-white w-64 h-80 shadow-2xl m-6 ">
+                        <div className="bg-white w-64 h-80 shadow-2xl m-6 ml-20 ">
 
                             <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
                             <div className="p-4">
@@ -89,7 +89,7 @@ const App = () => {
 
                         </div>
 
-                        <div className="bg-white w-64  h-80 shadow-2xl m-6 ">
+                        <div className="bg-white w-64  h-80 shadow-2xl m-6 ml-20">
                             <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
                             <div className="p-4">
                             <span
@@ -103,7 +103,7 @@ const App = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white w-64  h-80 shadow-2xl m-6 ">
+                        <div className="bg-white w-64  h-80 shadow-2xl m-6 ml-20 ">
                             <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
                             <div className="p-4">
                             <span
@@ -117,7 +117,7 @@ const App = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white w-64 h-80 shadow-2xl m-6 ">
+                        <div className="bg-white w-64 h-80 shadow-2xl m-6 ml-20 ">
                             <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
                             <div className="p-4">
                             <span
