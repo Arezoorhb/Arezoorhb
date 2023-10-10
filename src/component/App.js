@@ -1,19 +1,8 @@
 import Navbar from './Navbar'
-import {useState} from "react";
+import Featured from "./FeaturedAds";
 
 const App = () => {
-    // const[nav,setNav]=useState({
-    //     collapse:false
-    //
-    // })
-    // const Show =()=>{
-    //     return(
-    //         <div>
-    //
-    //             <p>hello world</p>
-    //         </div>
-    //     )
-    // }
+
     return (
         <div className="overflow-x-hidden">
             <div>
@@ -40,17 +29,17 @@ const App = () => {
                         <div
                             className=" h-80 w-72  mx-auto   absolute opacity-50  bg-white md:h-[80px] md:w-full rounded"></div>
                         <input placeholder="What are you looking for? " type="text"
-                               className="border  rounded m-4 h-8 w-56 p-2 ml-8 "/>
+                               className="border  rounded m-4 h-8 w-56 p-2 ml-8  md:ml-24"/>
                         <input placeholder="Location " type="text"
-                               className="border    rounded m-4 h-8 w-56 p-2  ml-8 "/>
+                               className="border    rounded m-4 h-8 w-56 p-2 md:ml-24 ml-8 "/>
                         {/*<input type="text" className="border rounded m-4 h-8 w-56 p-2 " />*/}
-                        <select className="border bg-white rounded m-4 h-8 w-56 pl-2 ml-8 ">
+                        <select className="border bg-white rounded m-4 h-8 w-56 pl-2 ml-8 md:ml-24 ">
                             <option className="selected ">All categories</option>
                             <option>All categories</option>
                             <option>All categories</option>
                             <option>All categories</option>
                         </select>
-                        <button className=" ml-15 w-36 h-8  rounded bg-emerald-300 m-4 ml-8"> Serch</button>
+                        <button className=" ml-15 w-36 h-8  rounded bg-emerald-300 m-4 md:ml-24"> Serch</button>
 
                     </div>
 
@@ -96,68 +85,7 @@ const App = () => {
                     </div>
                 </div>
                 {/*---------------------------------------------Featured Ads-------------------------------------------------------------*/}
-                <div
-                    className="  flex flex-col  bg-gray-100 md:ml-30 mt-32 p-4 md:w-full md:h-200px md:flex-row mx-auto md:justify-item-center ">
-
-                    <div className="  bg-white w-64 h-80 shadow-2xl m-6 md:ml-40 ">
-
-                        <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
-                        <div className="p-4">
-                            <span
-                                className="bg-gray-300 w-24 h-32 rounded-xl  text-center mt-10 p-1">car and vehicles</span>
-                            <i className="fa-solid fa-heart text-green-600 ml-12 hover:text-red-600"></i>
-                            <a href="#" className="mt-8 block text-green-600">House with Swimming Pool</a>
-                            <address>Don St, Brooklyn, New York</address>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-gray-600  "></i>
-                        </div>
-
-                    </div>
-
-                    <div className="md:ml-40 bg-white w-64  h-80 shadow-2xl m-6 ">
-                        <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
-                        <div className="p-4">
-                            <span
-                                className="bg-gray-300 w-24 h-36 rounded-xl  text-center mt-10 p-1">car and vehicles</span>
-                            <i className="fa-solid fa-heart text-green-600 ml-12 hover:text-red-600"></i>
-                            <a href="#" className="mt-8 block text-green-600">Wooden Chair & Table</a>
-                            <address>Don St, Brooklyn, New York</address>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-gray-600  "></i>
-                        </div>
-                    </div>
-
-                    <div className=" md:ml-40 bg-white w-64  h-80 shadow-2xl m-6  ">
-                        <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
-                        <div className="p-4">
-                            <span
-                                className="bg-gray-300 w-24 h-36 rounded-xl  text-center mt-10 p-1">car and vehicles</span>
-                            <i className="fa-solid fa-heart text-green-600 ml-12 hover:text-red-600"></i>
-                            <a href="#" className="mt-8 block text-green-600">Wooden Chair & Table</a>
-                            <address>Don St, Brooklyn, New York</address>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-gray-600  "></i>
-                        </div>
-                    </div>
-
-                    <div className="md:ml-40 bg-white w-64 h-80 shadow-2xl m-6  ">
-                        <img src="./image/img_1.jpg.jpg" className=" w-full  bg-no-repeat bg-contain h-40"/>
-                        <div className="p-4">
-                            <span
-                                className="bg-gray-300 w-24 h-36 rounded-xl  text-center mt-10 p-1">car and vehicles</span>
-                            <i className="fa-solid fa-heart text-green-600 ml-12 hover:text-red-600 "></i>
-                            <a href="#" className="mt-8 block text-green-600">House with Swimming Pool</a>
-                            <address>Don St, Brooklyn, New York</address>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-yellow-600  "></i>
-                            <i className="fa-solid fa-star text-gray-600  "></i>
-                        </div>
-                    </div>
-
-                </div>
+              <Featured/>
                 {/*------------------------------------------Popular Products----------------------------------------------------------------------------                    */}
 
                 <div>

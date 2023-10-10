@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className=" bg-white h-20 flex items-center  rounded-xl p-6   md:w-[80%] md:ml-60 ">
             <h1><span className=" text-2xl">CLASS</span><span className="text-emerald-400 text-2xl ">YADS</span></h1>
-            <ul className="hidden md:visible flex items-center ml-72 ">
+            <ul className="hidden md:flex items-center ml-72 ">
                 <li className="m-4  hover:text-emerald-400">Home</li>
                 <li className="m-4 hover:text-emerald-400 ">Ads</li>
                 <li className="m-4  hover:text-emerald-400">About</li>
@@ -27,21 +27,26 @@ const Navbar = () => {
             <button className="visible md:invisible  bg-green-200 w-[10%]  "
                     onClick={() => setNav({...nav, collaps: true})}>click
             </button>
-            {
-                nav.collaps === true ? (
-                    <div className={`${`"w-full h-full`}`}>
-                        <ul className=" flex-col items-center ">
-                            <li className="m-4  hover:text-emerald-400">Home</li>
-                            <li className="m-4 hover:text-emerald-400 ">Ads</li>
-                            <li className="m-4  hover:text-emerald-400">About</li>
-                            <li className="m-4 hover:text-emerald-400 ">Blog</li>
-                            <li className="m-4 hover:text-emerald-400 ">Contact</li>
-                        </ul>
 
-                    </div>
-                ) : null
 
-            }
+            <div
+                className={`w-full fixed h-[100vh] bg-white z-[99999] top-0 md:hidden transition-all ${nav.collaps === true ? "  left-[0%]" : " left-[-100%]"}`}>
+
+                    <button
+                        onClick={() => setNav({...nav, collaps: false})}
+                        className={"bg-black top-0 right-0 text-white "}>X
+                    </button>
+
+                <ul className=" flex-col justify-center  items-center ">
+                    <li className="m-4  hover:text-emerald-400">Home</li>
+                    <li className="m-4 hover:text-emerald-400 ">Ads</li>
+                    <li className="m-4  hover:text-emerald-400">About</li>
+                    <li className="m-4 hover:text-emerald-400 ">Blog</li>
+                    <li className="m-4 hover:text-emerald-400 ">Contact</li>
+                </ul>
+
+            </div>
+
 
         </div>
     )
