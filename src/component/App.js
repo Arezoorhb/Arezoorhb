@@ -1,5 +1,7 @@
 import Navbar from './Navbar'
 import Featured from "./FeaturedAds";
+import axios from "axios";
+import {useState} from "react";
 
 const App = () => {
 
@@ -85,7 +87,7 @@ const App = () => {
                     </div>
                 </div>
                 {/*---------------------------------------------Featured Ads-------------------------------------------------------------*/}
-              <Featured/>
+              <Featured  />
                 {/*------------------------------------------Popular Products----------------------------------------------------------------------------                    */}
 
                 <div>
