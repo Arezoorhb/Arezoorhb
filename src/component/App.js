@@ -156,7 +156,7 @@ const App = () => {
                 </div>
                 {/*----------------------------------------------------Trending Today--------------------------------------------------------*/}
 
-                <div className=" w-[40%] mt-12 p-4 bg-gray-100 w-full md:h-3/4 ">
+                <div className=" w-full mt-12 p-4 bg-gray-100 w-full md:h-3/4 ">
                     <h1 className="mr-40 md:text-center  text-2xl text-green-600 m-4 md:text-4xl ">Trending Today</h1>
                     <div className=" grid-col-1 p-4 md:grid md:grid-cols-2 justify-items-center">
 

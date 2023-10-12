@@ -1,7 +1,8 @@
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 
 const Cards = (props) => {
-    const {id} = useParams()
+    const navigate = useNavigate()
+
     return (
         <>
 
@@ -21,7 +22,7 @@ const Cards = (props) => {
                     <i className="fa-solid fa-star text-gray-600  "></i>
 
                 </div>
-                {/*<button onClick= {()=>navigate(`Cards/${users.id}`)}>click here</button>*/}
+                <button  className="bg-green-300 w-64 mx-auto" onClick={() => navigate(`Cards/${props.id}`)}>click here</button>
 
 
 

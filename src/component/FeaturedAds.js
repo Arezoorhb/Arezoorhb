@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 
 const Featured = () => {
     const [users, setUsers] = useState([])
-    const navigate=useNavigate()
+
     useEffect(() => {
         FechUser()
     }, [])
@@ -32,7 +32,7 @@ const Featured = () => {
                             <div key={key}>
 
                                 <Cards title={[item.title]} img={[item.image]} description={[item.description]}
-                                       category={item.category}/>
+                                       category={item.category} id={item.id}/>
 
                             </div>
                         )
